@@ -5,6 +5,8 @@ fn main() -> std::io::Result<()>
 {
 	let matches =
 		clap::App::new("video-minifier")
+			.author("benaryorg <binary@benary.org>")
+			.about("lossless video compression")
 			.version("0.1.0")
 			.arg
 				( clap::Arg::with_name("delete")
